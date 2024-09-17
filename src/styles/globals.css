@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,4 +24,53 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.bg-header {
+  background: linear-gradient(
+      90deg,
+      #ca8a04 18.83%,
+      rgba(0, 0, 0, 0.5) 51%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/hero2.jpg) lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bg-header {
+    background: linear-gradient(
+        0deg,
+        rgba(196, 140, 20, 0.7) 0%,
+        rgba(196, 140, 20, 0.7) 100%
+      ),
+      url(/hero2.jpg) lightgray 50% / cover no-repeat;
+    backdrop-filter: blur(25px);
+  }
+}
+
+.bg-testi {
+  background: linear-gradient(
+      270deg,
+      #251901d4 18.83%,
+      rgba(0, 0, 0, 0.5) 51%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(/testi.jpg) lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff3300;
+}
+
+/* Make the navigation buttons smaller */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  /* width: 20px; 
+  height: 20px;  */
+  font-size: 20px; /* Adjust icon size */
 }
